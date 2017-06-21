@@ -9,9 +9,9 @@ HELP="Help for File Transfer Script\n
       -d Specify ROOT_DIR on Destination Machine\n
       -h Help Info\n
       Sample Command:\n
-      flist_transfer.sh -u tlan -s 10.1.20.72 -m 10.1.20.119 -r /project/users/tlan/ec_ow -f fip/sec/rtl/bld/flist.txt -d /project/users/tlan/sec\n
-      Explain: Transfer files specified in tlan@10.1.20.72:/proejct/users/tlan/ec_ow/fip/sec/rtl/bld/flist.txt to tlan@10.1.20.119:/project/users/tlan/sec/\n
-      Note: All files are transferred to the same subdirectories. If failed, check if you created the subdirectories on the VM\n"
+      flist_transfer.sh -u tlan -s 10.1.20.01 -m 10.1.20.02 -r /project/src -f bld/flist.txt -d /project/dst\n
+      Explain: Transfer files specified in tlan@10.1.20.01:/proejct/src/bld/flist.txt to tlan@10.1.20.02:/project/dst/\n
+      Note: All files are transferred to the same subdirectories. If failed, check if you created the subdirectories on the Destination Machine\n"
 
 while getopts u:s:m:r:f:d:h option
 do
